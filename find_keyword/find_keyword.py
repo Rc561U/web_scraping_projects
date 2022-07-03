@@ -13,7 +13,6 @@ def get_url():
     }
 
     url = "https://news.ycombinator.com/newest"
-
     return url, headers
 
 
@@ -100,19 +99,10 @@ def main(num):
             print(f"Page number: {page+1}")
             page += 1
             
-
-
-
-
-
         except AttributeError:
             print("ycombinator.com close the access")
             break
-
-
-
-
-
+            
     if list_result:
         list_dict = converter(list_result)
         recorder(list_dict)
