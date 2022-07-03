@@ -1,3 +1,4 @@
+#!/usr/local/bin/python
 from bs4 import BeautifulSoup
 import csv, json
 import re
